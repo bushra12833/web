@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina - K-Beauty Products</title>
+    <style>
+        /* CSS styles */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #FFD3B6, #FFE0AC);
+            color: #5A3E2B;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #FFB88C;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            font-size: 2em;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links li a:hover {
+            color: #3E2723;
+        }
+
+        .hero {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .hero button {
+            background-color: #E67E22;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+
+        .hero button:hover {
+            background-color: #D35400;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #FFB88C;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .page-content {
+            margin: 40px;
+            text-align: center;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .product-item {
+            background-color: #FFF5E1;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .product-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .product-item h3 {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo">Lumina</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main class="hero" id="home">
+        <h1>Welcome to Lumina</h1>
+        <p>Your glow, our passion. Discover the magic of K-Beauty with us.</p>
+        <button data-target="#products">Explore Products</button>
+    </main>
+
+    <!-- Products Section -->
+    <section class="page-content" id="products">
+        <h2>Our Products</h2>
+        <p>Discover our range of K-beauty essentials for glowing, radiant skin.</p>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Sheet_mask.jpg" alt="Hydrating Face Masks">
+                <h3>Hydrating Face Masks</h3>
+                <p>Mediheal N.M.F. Aqua, Dr. Jart+ Ceramidin Mask</p>
+            </div>
+            <div class="product-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Serum.jpg" alt="Brightening Serums">
+                <h3>Brightening Serums</h3>
+                <p>Beauty of Joseon Glow Serum, SOME BY MI Yuja Niacin</p>
+            </div>
+            <div class="product-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Cleansing_oil.jpg" alt="Cleansing Oils">
+                <h3>Cleansing Oils</h3>
+                <p>Hanskin Pore Cleansing Oil, The Face Shop Rice Water Oil</p>
+            </div>
+            <div class="product-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Sunscreen.jpg" alt="Sunscreens">
+                <h3>Sunscreens</h3>
+                <p>Beauty of Joseon Relief Sun, COSRX Aloe Soothing Sun Cream</p>
+            </div>
+            <div class="product-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Toner.jpg" alt="Toners & Essences">
+                <h3>Toners & Essences</h3>
+                <p>Laneige Cream Skin, SK-II Facial Treatment Essence</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="page-content" id="about">
+        <h2>About Us</h2>
+        <p>Lumina is dedicated to bringing the best Korean beauty secrets to you, with high-quality, affordable skincare products for all skin types.</p>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="page-content" id="blog">
+        <h2>Our Blog</h2>
+        <p>Explore skincare tips, K-beauty trends, and expert advice on our blog.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="page-content" id="contact">
+        <h2>Contact Us</
+::contentReference[oaicite:0]{index=0}
+ 
